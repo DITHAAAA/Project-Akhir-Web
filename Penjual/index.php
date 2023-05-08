@@ -20,9 +20,6 @@
 </head>
 <body>
   <script type="text/javascript">
-       alert('SEKEDAR MEMBERI INFORMASI KEPADA PAK BAMABANG UNTUK LOGIN ADMIN \n \n Username = admin \n Password = admin');
-  </script>
-  <script type="text/javascript">
     $( document ).ready(function() {
      $( "#target" ).click();
    });
@@ -34,7 +31,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel">LOGIN ADMIN</h4>
+        <h4 class="modal-title" id="exampleModalLabel">LOGIN PENJUAL</h4>
       </div>
       <div class="modal-body">
         <form action="proses/login.php" method="POST">

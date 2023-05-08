@@ -8,8 +8,10 @@
 					<p><i class="glyphicon glyphicon-earphone"></i> +6287804616097</p>
 					<p><i class="glyphicon glyphicon-envelope"></i> bakery@gmail.com</p>
 				</div>
+
 				<div class="col-md-4">
-					<h5><b>MENU</b></h5>
+					
+					<h5 style="color: #19376D"><b>MENU</b></h5>
 					<p><a href=""  style="color: #000">Produk</a></p>
 					<p><a href=""  style="color: #000">Tentang kami</a></p>
 					<p><a href=""  style="color: #000">Hubungi Kami</a></p>

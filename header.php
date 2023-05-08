@@ -19,26 +19,7 @@ if(isset($_SESSION['kd_cs'])){
 
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row top">
-			<center>
-				<div class="col-md-4" style="padding: 3px;">
-					<span> <i class="glyphicon glyphicon-earphone"></i> +6287804616097</span>
-				</div>
-
-
-				<div class="col-md-4"  style="padding: 3px;">
-					<span><i class="glyphicon glyphicon-envelope"></i> bakery@gmail.com</span>
-				</div>
-
-
-				<div class="col-md-4"  style="padding: 3px;">
-					<span>Bakery</span>
-				</div>
-			</center>
-		</div>
-	</div>
-
+	
 	<nav class="navbar navbar-default" style="padding: 5px;">
 		<div class="container">
 
@@ -81,7 +62,7 @@ if(isset($_SESSION['kd_cs'])){
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> Akun <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="user_login.php">Login Member</a></li>
-								<li><a href=" admin/index.php">Login Admin</a></li>
+								<li><a href=" Penjual/index.php">Login Penjual</a></li>
 								<li><a href="register.php">Register</a></li>
 							</ul>
 						</li>

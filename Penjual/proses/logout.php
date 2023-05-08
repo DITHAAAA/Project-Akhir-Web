@@ -1,8 +1,8 @@
 <?php 
 session_start();
-unset($_SESSION['admin']);
+unset($_SESSION['penjual']);
 
-if(!isset($_SESSION['admin'])){
+if(!isset($_SESSION['penjual'])){
 	header('location:../index.php');
 }
 
