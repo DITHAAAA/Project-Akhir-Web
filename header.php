@@ -33,12 +33,27 @@ if(isset($_SESSION['kd_cs'])){
 				<a class="navbar-brand" href="#" style="color: #black"><b>BAKERY</b></a>
 			</div>
 
+			<form class="d-flex" role="search">
+ 				 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+  				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="index.php">Home</a></li>
 					<li><a href="produk.php">Produk</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-stats"></i> Kategori <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="produk.php">Roti Sisir</a></li>
+							<li><a href="laporan_profit.php">Laporan Profit</a></li>
+							<li><a href="laporan_omset.php">Laporan Omset</a></li>
+							<li><a href="laporan_pembatalan.php">Laporan Pembatalan	</a></li>
+						</ul>
+					</li>
 					<li><a href="about.php">Tentang Kami</a></li>
 					<li><a href="manual.php">Manual Aplikasi</a></li>
+
 					<?php 
 					if(isset($_SESSION['kd_cs'])){
 					$kode_cs = $_SESSION['kd_cs'];
@@ -84,3 +99,5 @@ if(isset($_SESSION['kd_cs'])){
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
+
+	

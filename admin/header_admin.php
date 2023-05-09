@@ -48,7 +48,6 @@ if(!isset($_SESSION['admin'])){
 							<li><a href="laporan_penjualan.php">Laporan Penjualan</a></li>
 							<li><a href="laporan_profit.php">Laporan Profit</a></li>
 							<li><a href="laporan_omset.php">Laporan Omset</a></li>
-							<li><a href="laporan_pembatalan.php">Laporan Pembatalan	</a></li>
 						</ul>
 					</li>
 					<li><a href="halaman_utama.php">Dashboard</a></li>

@@ -74,6 +74,24 @@ if(isset($_GET['page'])){
 </div>
 <br>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <?php 
 include 'footer.php';
 ?>
