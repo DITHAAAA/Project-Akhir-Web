@@ -56,11 +56,6 @@ $jml3 = mysqli_num_rows($result3);
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 <br>
 <?php 

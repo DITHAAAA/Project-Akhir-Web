@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  if(isset($_SESSION['Penjual'])){
+  if(isset($_SESSION['admin'])){
   header('location:halaman_utama.php');
 }
 
@@ -31,7 +31,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel">LOGIN PENJUAL</h4>
+        <h4 class="modal-title" id="exampleModalLabel">LOGIN ADMIN</h4>
       </div>
       <div class="modal-body">
         <form action="proses/login.php" method="POST">

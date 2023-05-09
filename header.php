@@ -61,8 +61,9 @@ if(isset($_SESSION['kd_cs'])){
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> Akun <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="user_login.php">Login Member</a></li>
+								<li><a href=" admin/index.php">Login Admin</a></li>
 								<li><a href=" Penjual/index.php">Login Penjual</a></li>
+								<li><a href="user_login.php">Login Member</a></li>
 								<li><a href="register.php">Register</a></li>
 							</ul>
 						</li>

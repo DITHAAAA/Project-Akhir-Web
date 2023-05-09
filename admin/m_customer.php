@@ -1,5 +1,5 @@
 <?php 
-include 'header.php';
+include 'header_admin.php';
 
 if(isset($_GET['page'])){
 	$kode = $_GET['kode'];
