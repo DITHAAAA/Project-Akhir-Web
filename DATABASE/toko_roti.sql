@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 27, 2020 at 07:16 AM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.2.32
+-- Generation Time: May 07, 2023 at 02:41 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dbpw192_18410100054`
+-- Database: `toko roti`
 --
 
 -- --------------------------------------------------------
@@ -31,7 +31,7 @@ CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
   `username` varchar(200) NOT NULL,
   `password` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `admin`
@@ -52,7 +52,7 @@ CREATE TABLE `bom_produk` (
   `kode_produk` varchar(100) NOT NULL,
   `nama_produk` varchar(200) NOT NULL,
   `kebutuhan` varchar(200) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `bom_produk`
@@ -61,13 +61,7 @@ CREATE TABLE `bom_produk` (
 INSERT INTO `bom_produk` (`kode_bom`, `kode_bk`, `kode_produk`, `nama_produk`, `kebutuhan`) VALUES
 ('B0001', 'M0002', 'P0001', 'Roti Sobek', '2'),
 ('B0001', 'M0001', 'P0001', 'Roti Sobek', '4'),
-('B0001', 'M0004', 'P0001', 'Roti Sobek', '3'),
-('B0002', 'M0001', 'P0002', 'Maryam', '4'),
-('B0002', 'M0004', 'P0002', 'Maryam', '3'),
-('B0002', 'M0003', 'P0002', 'Maryam', '2'),
-('B0003', 'M0002', 'P0003', 'Kue tart coklat', '2'),
-('B0003', 'M0003', 'P0003', 'Kue tart coklat', '5'),
-('B0003', 'M0005', 'P0003', 'Kue tart coklat', '5');
+('B0001', 'M0004', 'P0001', 'Roti Sobek', '3');
 
 -- --------------------------------------------------------
 
@@ -82,7 +76,7 @@ CREATE TABLE `customer` (
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   `telp` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `customer`
@@ -106,7 +100,7 @@ CREATE TABLE `inventory` (
   `satuan` varchar(200) NOT NULL,
   `harga` int(11) NOT NULL,
   `tanggal` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `inventory`
@@ -132,7 +126,7 @@ CREATE TABLE `keranjang` (
   `nama_produk` varchar(100) NOT NULL,
   `qty` int(11) NOT NULL,
   `harga` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `keranjang`
@@ -154,7 +148,7 @@ CREATE TABLE `produk` (
   `image` text NOT NULL,
   `deskripsi` text NOT NULL,
   `harga` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `produk`
@@ -162,8 +156,9 @@ CREATE TABLE `produk` (
 
 INSERT INTO `produk` (`kode_produk`, `nama`, `image`, `deskripsi`, `harga`) VALUES
 ('P0001', 'Roti Sobek', '5f1d915d27dc3.jpg', '																								Roti Enak Sobek Sobek aww\r\n																					', 10000),
-('P0002', 'Maryam', '5f1d9154715a4.jpg', '				Roti araym\r\n						', 15000),
-('P0003', 'Kue tart coklat', '5f1d924614831.jpg', 'Kuetar dengan varian rasa coklat enak dan lumer rasanya\r\n			', 100000);
+('P0002', 'Roti Sisir Mentega', '645759946dae1.jpg', 'Roti sisir mentega \r\n			', 18000),
+('P0003', 'Roti Tawar Goreng', '64575a144bb20.jpg', 'Roti tawar goreng \r\n			', 15000),
+('P0004', 'Roti Kayu Manis', '64575a70c3766.jpg', '								Roti ini menggunakan kayu manis\r\n									', 12000);
 
 -- --------------------------------------------------------
 
@@ -188,7 +183,7 @@ CREATE TABLE `produksi` (
   `terima` varchar(200) NOT NULL,
   `tolak` varchar(200) NOT NULL,
   `cek` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `produksi`
@@ -214,7 +209,7 @@ CREATE TABLE `report_cancel` (
   `kode_produk` varchar(100) NOT NULL,
   `jumlah` varchar(100) NOT NULL,
   `tanggal` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -228,7 +223,7 @@ CREATE TABLE `report_inventory` (
   `nama_bahanbaku` varchar(100) NOT NULL,
   `jml_stok_bk` int(11) NOT NULL,
   `tanggal` varchar(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -242,7 +237,7 @@ CREATE TABLE `report_omset` (
   `jumlah` int(11) NOT NULL,
   `total_omset` int(11) NOT NULL,
   `tanggal` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -257,7 +252,7 @@ CREATE TABLE `report _penjualan` (
   `nama_produk` varchar(100) NOT NULL,
   `jumlah_terjual` int(11) NOT NULL,
   `tanggal` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -272,7 +267,7 @@ CREATE TABLE `report_produksi` (
   `nama_produk` varchar(100) NOT NULL,
   `qty` int(11) NOT NULL,
   `tanggal` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -288,7 +283,7 @@ CREATE TABLE `report_profit` (
   `jumlah` varchar(11) NOT NULL,
   `total_profit` varchar(11) NOT NULL,
   `tanggal` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for dumped tables
