@@ -34,6 +34,7 @@ $row = mysqli_fetch_assoc($result);
 							<td><b>Deskripsi</b></td>
 							<td><?= $row['deskripsi'];  ?></td>
 						</tr>
+
 						<tr>
 							<td><b>Jumlah</b></td>
 							<td><input class="form-control" type="number" min="1" name="jml" value="1" style="width: 155px;"></td>

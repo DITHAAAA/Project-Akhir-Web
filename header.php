@@ -30,29 +30,29 @@ if(isset($_SESSION['kd_cs'])){
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#" style="color: #black"><b>BAKERY</b></a>
+				<a class="navbar-brand" href="#" style="color: #black"><b>Shine Bakery</b></a>
 			</div>
 
-			<form class="d-flex" role="search">
+			<!-- <form class="d-flex" role="search">
  				 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
   				<button class="btn btn-outline-success" type="submit">Search</button>
-			</form>
+			</form> -->
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="index.php">Home</a></li>
 					<li><a href="produk.php">Produk</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-stats"></i> Kategori <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-stats"></i> Menu <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="produk.php">Roti Sisir</a></li>
-							<li><a href="laporan_profit.php">Laporan Profit</a></li>
-							<li><a href="laporan_omset.php">Laporan Omset</a></li>
-							<li><a href="laporan_pembatalan.php">Laporan Pembatalan	</a></li>
+							<li><a href="produk.php">Roti Gandum</a></li>
+							<li><a href="laporan_profit.php">Roti Tawar</a></li>
+							<li><a href="laporan_omset.php">Roti Croissant</a></li>
+							<li><a href="laporan_pembatalan.php">Roti Sisir</a></li>
 						</ul>
 					</li>
-					<li><a href="about.php">Tentang Kami</a></li>
-					<li><a href="manual.php">Manual Aplikasi</a></li>
+					<li><a href="about.php">Tentang</a></li>
+					<li><a href="manual.php">Panduan Aplikasi</a></li>
 
 					<?php 
 					if(isset($_SESSION['kd_cs'])){
@@ -79,7 +79,7 @@ if(isset($_SESSION['kd_cs'])){
 								<li><a href=" admin/index.php">Login Admin</a></li>
 								<li><a href=" Penjual/index.php">Login Penjual</a></li>
 								<li><a href="user_login.php">Login Member</a></li>
-								<li><a href="register.php">Register</a></li>
+								<li><a href="register.php">Registrasi</a></li>
 							</ul>
 						</li>
 						<?php 
