@@ -14,7 +14,7 @@ Halaman Dashboard
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/cbbd4175-d6cc-44c6-9805-961ad2ef6424">
 
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/80d64fff-1201-4359-9661-b127b7a0fb0e">
-
+Terdapat tampilan halaman utama website shine bakery  dengan produk dan footer yang ada pada gambar di atas.
 
 Halaman Login Customer
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/be2e7bc2-e0de-423b-a79d-f2c5eace5d94">
@@ -24,7 +24,7 @@ Halaman Login Customer
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/989f9a5a-3316-4bb0-a2b2-3e3adffd8588">
 
 <img width="959" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/d21c1752-6eac-4bad-a172-098ff62dac1a">
-
+Pada halaman Login customer terlebih dahulu melakukan register setelah itu melakukan login dan akan diarahkan ke menu dashboard customer.
 
 Halaman Dashboard Customer
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/cc5157d8-f209-43a6-98d5-42d7c8409892">
