@@ -5,6 +5,7 @@ NAMA ANGGOTA C2 KELOMPOK 3 :
 2. Ditha Tul Nugraha 2109116114 (Anggota)
 3. Luqmanul Hakim Rusfan 2109116116 (Anggota)
 
+ERD SHINE BAKERY
 ![ERD](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/66126316-8bd6-48c7-a6b1-af28b9e72809)
 
 ![Use Case](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/1597e0a9-bba1-4966-b1b4-8d6e33364423)
@@ -24,6 +25,8 @@ Halaman Login Customer
 
 <img width="959" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/d21c1752-6eac-4bad-a172-098ff62dac1a">
 
+
+Halaman Dashboard Customer
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/cc5157d8-f209-43a6-98d5-42d7c8409892">
 
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/890901ea-86ec-418d-926f-91e774a3420d">
