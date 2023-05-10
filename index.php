@@ -19,7 +19,7 @@ include 'header.php';
 		</h4>
 
 
-	<h2 style=" width: 100%; border-bottom: 4px solid #ff8680; margin-top: 80px;"><b>Produk Kami</b></h2>
+	<h2 style=" width: 100%; border-bottom: 4px solid #ff8680; margin-top: 80px;"><b>PRODUK KAMI</b></h2>
 
 	<div class="row">
 		<?php 

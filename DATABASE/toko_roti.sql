@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 07, 2023 at 02:41 PM
+-- Generation Time: May 09, 2023 at 05:07 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -61,7 +61,12 @@ CREATE TABLE `bom_produk` (
 INSERT INTO `bom_produk` (`kode_bom`, `kode_bk`, `kode_produk`, `nama_produk`, `kebutuhan`) VALUES
 ('B0001', 'M0002', 'P0001', 'Roti Sobek', '2'),
 ('B0001', 'M0001', 'P0001', 'Roti Sobek', '4'),
-('B0001', 'M0004', 'P0001', 'Roti Sobek', '3');
+('B0001', 'M0004', 'P0001', 'Roti Sobek', '3'),
+('B0003', '1', 'P0003', 'Roti Kayu Manis', ''),
+('B0002', '2', 'P0002', 'Roti Croissant Strawberry', ''),
+('B0002', '1', 'P0002', 'Roti Croissant Strawberry', ''),
+('B0003', '2', 'P0003', 'Roti Kayu Manis', ''),
+('B0003', '4', 'P0003', 'Roti Kayu Manis', '');
 
 -- --------------------------------------------------------
 
@@ -85,7 +90,8 @@ CREATE TABLE `customer` (
 INSERT INTO `customer` (`kode_customer`, `nama`, `email`, `username`, `password`, `telp`) VALUES
 ('C0002', 'Rafi Akbar', 'a.rafy@gmail.com', 'rafi', '$2y$10$/UjGYbisTPJhr8MgmT37qOXo1o/HJn3dhafPoSYbOlSN1E7olHIb.', '0856748564'),
 ('C0003', 'Nagita Silvana', 'bambang@gmail.com', 'Nagita', '$2y$10$47./qEeA/y3rNx3UkoKmkuxoAtmz4ebHSR0t0Bc.cFEEg7cK34M3C', '087804616097'),
-('C0004', 'Nadiya', 'nadiya@gmail.com', 'nadiya', '$2y$10$6wHH.7rF1q3JtzKgAhNFy.4URchgJC8R.POT1osTAWmasDXTTO7ZG', '0898765432');
+('C0004', 'Nadiya', 'nadiya@gmail.com', 'nadiya', '$2y$10$6wHH.7rF1q3JtzKgAhNFy.4URchgJC8R.POT1osTAWmasDXTTO7ZG', '0898765432'),
+('C0005', 'acha', 'user@user.com', 'acha', '$2y$10$.ptgcAs7MO4mDIWIyO4qCebJyQ0utkwFPmDVWyia6ldSAiyrFB/2i', '4676787');
 
 -- --------------------------------------------------------
 
@@ -139,6 +145,25 @@ INSERT INTO `keranjang` (`id_keranjang`, `kode_customer`, `kode_produk`, `nama_p
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `penjual`
+--
+
+CREATE TABLE `penjual` (
+  `id` int(50) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `penjual`
+--
+
+INSERT INTO `penjual` (`id`, `username`, `password`) VALUES
+(1, 'penjual', 'penjual');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `produk`
 --
 
@@ -156,9 +181,9 @@ CREATE TABLE `produk` (
 
 INSERT INTO `produk` (`kode_produk`, `nama`, `image`, `deskripsi`, `harga`) VALUES
 ('P0001', 'Roti Sobek', '5f1d915d27dc3.jpg', '																								Roti Enak Sobek Sobek aww\r\n																					', 10000),
-('P0002', 'Roti Sisir Mentega', '645759946dae1.jpg', 'Roti sisir mentega \r\n			', 18000),
-('P0003', 'Roti Tawar Goreng', '64575a144bb20.jpg', 'Roti tawar goreng \r\n			', 15000),
-('P0004', 'Roti Kayu Manis', '64575a70c3766.jpg', '								Roti ini menggunakan kayu manis\r\n									', 12000);
+('P0002', 'Roti Croissant Strawberry', '645a564b3d3a5.jpg', '\r\n			', 20000),
+('P0003', 'Roti Kayu Manis', '645a56956cb8d.jpg', '\r\n			', 15000),
+('P0004', 'Roti Sisir Mentega', '645a56ece1654.jpg', '\r\n			', 15000);
 
 -- --------------------------------------------------------
 
@@ -195,7 +220,11 @@ INSERT INTO `produksi` (`id_order`, `invoice`, `kode_customer`, `kode_produk`, `
 (10, 'INV0003', 'C0003', 'P0002', 'Maryam', 2, 15000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
 (11, 'INV0003', 'C0003', 'P0003', 'Kue tart coklat', 1, 100000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
 (12, 'INV0003', 'C0003', 'P0001', 'Roti Sobek', 1, 10000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
-(13, 'INV0004', 'C0004', 'P0002', 'Maryam', 1, 15000, 'Pesanan Baru', '2020-07-26', 'Jawa Timur', 'Sidoarjo', 'Jl.KH Syukur Blok C 18 A', '50987', '0', '0', 0);
+(13, 'INV0004', 'C0004', 'P0002', 'Maryam', 1, 15000, 'Pesanan Baru', '2020-07-26', 'Jawa Timur', 'Sidoarjo', 'Jl.KH Syukur Blok C 18 A', '50987', '0', '0', 0),
+(14, 'INV0005', 'C0005', 'P0002', 'Roti Croissant Strawberry', 1, 20000, 'Pesanan Baru', '2323-05-09', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 0),
+(15, 'INV0005', 'C0005', 'P0003', 'Roti Kayu Manis', 1, 15000, 'Pesanan Baru', '2323-05-09', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 0),
+(16, 'INV0006', 'C0005', 'P0001', 'Roti Sobek', 1, 10000, 'Pesanan Baru', '2323-05-09', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 0),
+(17, 'INV0006', 'C0005', 'P0004', 'Roti Sisir Mentega', 1, 15000, 'Pesanan Baru', '2323-05-09', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 0);
 
 -- --------------------------------------------------------
 
@@ -314,6 +343,12 @@ ALTER TABLE `keranjang`
   ADD PRIMARY KEY (`id_keranjang`);
 
 --
+-- Indexes for table `penjual`
+--
+ALTER TABLE `penjual`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `produk`
 --
 ALTER TABLE `produk`
@@ -376,13 +411,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `keranjang`
 --
 ALTER TABLE `keranjang`
-  MODIFY `id_keranjang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_keranjang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
+--
+-- AUTO_INCREMENT for table `penjual`
+--
+ALTER TABLE `penjual`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `produksi`
 --
 ALTER TABLE `produksi`
-  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `report_cancel`

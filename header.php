@@ -30,13 +30,14 @@ if(isset($_SESSION['kd_cs'])){
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#" style="color: #black"><b>Shine Bakery</b></a>
+				<a class="navbar-brand" href="#" style="color: #black"><b>SHINE BAKERY</b></a>
 			</div>
 
-			<!-- <form class="d-flex" role="search">
- 				 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-  				<button class="btn btn-outline-success" type="submit">Search</button>
-			</form> -->
+			<form class="d-flex" role="search">
+  				<input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+  					<button class="btn btn-outline-success btn-sm" type="submit">Search</button>
+			</form>
+
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
@@ -46,9 +47,9 @@ if(isset($_SESSION['kd_cs'])){
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-stats"></i> Menu <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="produk.php">Roti Gandum</a></li>
-							<li><a href="laporan_profit.php">Roti Tawar</a></li>
-							<li><a href="laporan_omset.php">Roti Croissant</a></li>
-							<li><a href="laporan_pembatalan.php">Roti Sisir</a></li>
+							<li><a href="produk.php">Roti Tawar</a></li>
+							<li><a href="produk.php">Roti Croissant</a></li>
+							<li><a href="produk.php">Roti Sisir</a></li>
 						</ul>
 					</li>
 					<li><a href="about.php">Tentang</a></li>
@@ -78,7 +79,7 @@ if(isset($_SESSION['kd_cs'])){
 							<ul class="dropdown-menu">
 								<li><a href=" admin/index.php">Login Admin</a></li>
 								<li><a href=" Penjual/index.php">Login Penjual</a></li>
-								<li><a href="user_login.php">Login Member</a></li>
+								<li><a href="user_login.php">Login Customer</a></li>
 								<li><a href="register.php">Registrasi</a></li>
 							</ul>
 						</li>

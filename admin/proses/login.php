@@ -4,7 +4,7 @@ include '../../koneksi/koneksi.php';
 $username = $_POST['user'];
 $pass = $_POST['pass'];
 // cek user
-$result = mysqli_query($conn, "SELECT * FROM admin where username = '$username'");
+$result = mysqli_query($conn, "SELECT * FROM admin where username = '$username'"); 
 $row = mysqli_fetch_assoc($result);
 $user = $row['username'];
 $ps = $row['password'];

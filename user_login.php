@@ -3,11 +3,11 @@
  ?>
 
 <div class="container" style="padding-bottom: 250px;">
-		<h2 style=" width: 100%; border-bottom: 4px solid #ff8680"><b>Login</b></h2>
+		<h2 style=" width: 100%; border-bottom: 4px solid #ff8680"><b>LOGIN</b></h2>
 
 <form action="proses/login.php" method="POST">
 		<div class="form-group">
-			<label for="exampleInputEmail1">username</label>
+			<label for="exampleInputEmail1">Username</label>
 			<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Username" name="username" style="width: 500px;">
 		</div>
 		
