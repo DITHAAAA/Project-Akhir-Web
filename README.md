@@ -9,8 +9,10 @@ NAMA ANGGOTA C2 KELOMPOK 3 :
 
 ![Use Case](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/1597e0a9-bba1-4966-b1b4-8d6e33364423)
 
+Halaman Dashboard
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/cbbd4175-d6cc-44c6-9805-961ad2ef6424">
 
+Halaman Login Customer
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/80d64fff-1201-4359-9661-b127b7a0fb0e">
 
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/be2e7bc2-e0de-423b-a79d-f2c5eace5d94">
