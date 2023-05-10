@@ -9,7 +9,7 @@ NAMA ANGGOTA C2 KELOMPOK 3 :
 
 ![Use Case](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/1597e0a9-bba1-4966-b1b4-8d6e33364423)
 
-<img width="1275" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/0da1d734-af4b-4713-8c1d-e74120a42b0b">
+<img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/cbbd4175-d6cc-44c6-9805-961ad2ef6424">
 
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/80d64fff-1201-4359-9661-b127b7a0fb0e">
 
@@ -32,3 +32,18 @@ NAMA ANGGOTA C2 KELOMPOK 3 :
 <img width="960" alt="image" src="https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/37cd7e97-3592-49df-982b-0e76c5a31dc7">
 
 ![WhatsApp Image 2023-05-10 at 23 24 24](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/f03470b4-b449-4753-b045-b56e46074afd)
+
+![WhatsApp Image 2023-05-10 at 23 37 46](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/041c85d5-d567-4349-b286-858c5b97b2f7)
+
+![WhatsApp Image 2023-05-10 at 23 38 02](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/f91c8282-d444-4b3e-81ed-3e705f844ad6)
+
+![WhatsApp Image 2023-05-10 at 23 38 17](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/9c6d10c4-bedf-40ab-881a-376c80894d11)
+
+![WhatsApp Image 2023-05-10 at 23 38 57](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/af14bfbd-8b70-4c29-8d3a-8e4ca2c4bb37)
+
+![WhatsApp Image 2023-05-10 at 23 39 14](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/16a4e270-bbb3-4463-a62c-fbdaa4d7f09b)
+
+![WhatsApp Image 2023-05-10 at 23 39 49](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/2bc1c55c-da82-4270-9cb6-7c253035c92a)
+
+![WhatsApp Image 2023-05-10 at 23 40 11](https://github.com/C2-Kelompok-3/Project-Akhir-Web/assets/120229907/e2908edf-62b0-4671-af86-ef5445afd5e9)
+
