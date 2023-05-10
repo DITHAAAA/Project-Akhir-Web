@@ -9,7 +9,7 @@ include '../koneksi/koneksi.php';
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Backery</title>
+	<title>Shine Bakery</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
